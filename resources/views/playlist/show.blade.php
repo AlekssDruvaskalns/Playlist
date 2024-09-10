@@ -10,6 +10,9 @@
                     </div>
                 </div>
                 <div>
+                <a href="{{ route('song.create', $playlist->id) }}" class="bg-green-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mr-2">
+                        Add
+                    </a>
                     <a href="{{ route('playlist.edit', $playlist->id) }}" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mr-2">
                         Edit
                     </a>
@@ -17,7 +20,7 @@
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-                            Delete
+                            Delete  
                         </button>
                     </form>
                 </div>
